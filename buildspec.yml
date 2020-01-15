@@ -1,0 +1,23 @@
+ 
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+    commands:
+      #- apt install python3
+      #- apt install python3-pip
+      - echo "salve"
+  build:
+    commands:
+      - touch teste_deploy.txt
+
+artifacts:
+  files:
+    - '*.txt'
+    #- '**/*'
+    - 'scripts/*'
+    - 'appspec.yml'
+  discard-paths: no
+  name: blue-iaas-backend-artifact
