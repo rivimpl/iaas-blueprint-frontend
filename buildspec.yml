@@ -11,13 +11,14 @@ phases:
       - echo "salve"
   build:
     commands:
-      - touch teste_deploy.txt
+      - echo tentando mover as fotos
+     
+      
 
 artifacts:
   files:
-    - '*.txt'
+    #- '*.png'
     #- '**/*'
     - 'scripts/*'
-    - 'appspec.yml'
   discard-paths: no
-  name: blue-iaas-backend-artifact
+  name: blue-iaas-frontend-artifact
