@@ -19,6 +19,7 @@ artifacts:
   files:
     #- '*.png'
     #- '**/*'
+    - 'index.html'
     - 'scripts/*'
   discard-paths: no
   name: blue-iaas-frontend-artifact
